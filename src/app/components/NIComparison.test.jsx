@@ -18,7 +18,7 @@ describe('NIComparison component', () => {
       json: () => Promise.resolve(mockResponse),
     });
     render(<NIComparison date="2023-03-17" title="National Insurance" income={40000} />);
-    await waitFor(() => screen.getByText('5000'));
+    await screen.findByText('5000');
     expect(screen.getByText('5000')).toBeInTheDocument();
   });
 

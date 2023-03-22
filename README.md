@@ -22,6 +22,12 @@ There is a single API route accessible through the following request:
 curl -X POST http://localhost:8080/v1/national-insurance -H 'Content-Type: application/json' -d '{"income": 1234}'
 ```
 
+To run tests and line:
+
+```
+yarn ci
+```
+
 ---
 
 ### _Additional Information_

@@ -20,9 +20,8 @@ describe('Homepage', () => {
   });
 
   test('should update income when input value changes', async () => {
-    await act(async () => {
-      container = render(<Homepage />);
-    });
+    container = render(<Homepage />);
+
     const incomeInput = container.container.querySelector('#income');
 
     fireEvent.change(incomeInput, { target: { value: '50000' } });
